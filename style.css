@@ -1,0 +1,284 @@
+/* ================= GLOBAL SETTINGS ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    [cite: 59, 60]
+}
+
+body {
+    background: #ffffff;
+    [cite: 61] color: #333;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+/* ================= NAVIGATION BAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: linear-gradient(135deg, #1e1e2f, #23234a);
+    [cite: 62] color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    [cite: 63]
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    [cite: 64]
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s;
+    [cite: 65]
+}
+
+.nav-links a:hover {
+    color: #95ba00;
+    [cite: 67]
+}
+
+/* ================= HERO SECTION (HOME) ================= */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://images.unsplash.com/photo-1527430253228-e93688616381');
+    [cite: 68] background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    [cite: 69]
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    [cite: 70]
+}
+
+.hero button {
+    padding: 15px 40px;
+    background: #788a38;
+    [cite: 72] border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(153, 92, 2, 0.4);
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+    [cite: 73] background: #e68900;
+}
+
+/* ================= FEATURES SECTION ================= */
+.features {
+    padding: 80px 10%;
+    text-align: center;
+    [cite: 74]
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    [cite: 75]
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+    [cite: 76] box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    [cite: 77] box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= FORMS (LOGIN / SIGNUP / CONTACT) ================= */
+.form-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #2626cf, #23234a);
+    [cite: 84] min-height: 100vh;
+}
+
+.form-page h1 {
+    color: white;
+    margin-bottom: 30px;
+    [cite: 85]
+}
+
+form {
+    background: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    [cite: 86] display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+input,
+textarea,
+select {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    [cite: 88] outline: none;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #774802;
+    [cite: 89] box-shadow: 0 0 5px rgba(255, 152, 0, 0.3);
+}
+
+form button {
+    padding: 12px;
+    background: #0808da;
+    [cite: 90] color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #ff9800;
+    [cite: 91]
+}
+
+/* ================= ATTENDANCE SYSTEM PAGE ================= */
+.container-attendance {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-box {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.attendance-box input,
+.attendance-box select {
+    flex: 1;
+    min-width: 200px;
+}
+
+#list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+#list li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    background: #1e1e2f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* ================= ABOUT PAGE ================= */
+.page-section {
+    padding: 100px 15%;
+    text-align: center;
+    [cite: 78]
+}
+
+.page-section h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    [cite: 79]
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #1e1e2f;
+    [cite: 92] color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+        flex-direction: column;
+        [cite: 97] gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+        [cite: 98] align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .attendance-box {
+        flex-direction: column;
+    }
+}
